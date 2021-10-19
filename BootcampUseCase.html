@@ -1,0 +1,963 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Bootcamp Scenario - DMC Extensibility Bootcamp</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="assets/javascripts/modernizr.eca31fed.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="theme/stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#business-case" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="." title="DMC Extensibility Bootcamp" aria-label="DMC Extensibility Bootcamp" class="md-header-nav__button md-logo">
+          
+            <img alt="logo" src="assets/logo_sap.jpeg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              DMC Extensibility Bootcamp
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Bootcamp Scenario
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/SAP-samples/digital-manufacturing-extension-samples/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="index.html" class="md-tabs__link md-tabs__link--active">
+          Unit 1
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="Field%26IntegrationExtensions.html" class="md-tabs__link">
+          Unit 2
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="InAppExtensions.html" class="md-tabs__link">
+          Unit 3
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="Exercise1.1.html" class="md-tabs__link">
+          Exercise 1
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="." title="DMC Extensibility Bootcamp" class="md-nav__button md-logo">
+      
+        <img alt="logo" src="assets/logo_sap.jpeg" width="48" height="48">
+      
+    </a>
+    DMC Extensibility Bootcamp
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/SAP-samples/digital-manufacturing-extension-samples/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+    
+    <label class="md-nav__link" for="nav-1">
+      Unit 1
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Unit 1
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="index.html" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="BTPExtensionSuite.html" title="BTP Extension Suite" class="md-nav__link">
+      BTP Extension Suite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="DMCUseCases.html" title="DMC Use Cases" class="md-nav__link">
+      DMC Use Cases
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Bootcamp Scenario
+      </label>
+    
+    <a href="BootcampUseCase.html" title="Bootcamp Scenario" class="md-nav__link md-nav__link--active">
+      Bootcamp Scenario
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#business-case" class="md-nav__link">
+    Business Case
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identified-gaps" class="md-nav__link">
+    Identified Gaps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scenarios" class="md-nav__link">
+    Scenarios
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-load" class="md-nav__link">
+    Data Load
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Unit 2
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Unit 2
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Field%26IntegrationExtensions.html" title="Content" class="md-nav__link">
+      Content
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Unit 3
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Unit 3
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="InAppExtensions.html" title="Content" class="md-nav__link">
+      Content
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Exercise 1
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Exercise 1
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Exercise1.1.html" title="Exercise 1.1" class="md-nav__link">
+      Exercise 1.1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Exercise1.2.html" title="Exercise 1.2" class="md-nav__link">
+      Exercise 1.2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#business-case" class="md-nav__link">
+    Business Case
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identified-gaps" class="md-nav__link">
+    Identified Gaps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scenarios" class="md-nav__link">
+    Scenarios
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-load" class="md-nav__link">
+    Data Load
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/SAP-samples/digital-manufacturing-extension-samples/edit/master/docs/BootcampUseCase.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Bootcamp Scenario</h1>
+                
+                <h2 id="business-case">Business Case<a class="headerlink" href="#business-case" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Lift truck manufacturer producing lifter assemblies.</li>
+<li>Identified gaps in standard solution functionality to be addressed with DMC extensions.</li>
+<li>Simple scenarios for an end-to-end subassembly manufacturing process that highlight different extensibility use cases.</li>
+</ul>
+<h3 id="identified-gaps">Identified Gaps<a class="headerlink" href="#identified-gaps" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>SFC numbering scheme must include the Sales Order number as a prefix for each SFC.  Custom Next Number logic is required.</p>
+</li>
+<li>
+<p>The Production Order IDoc must be enhanced to include Sales Order number as a custom field.</p>
+</li>
+<li>
+<p>Missing components detection via trained Machine Learning models to support Nonconformance logging during lifter assembly.</p>
+</li>
+<li>
+<p>Recent torque values during assembly must be recorded and used to inform the Nonconformance process. If the last 3 torque values for a machine are out-of-spec, a Nonconformance must be logged automatically.</p>
+</li>
+<li>
+<p>If the last 3 torque values for a machine are out-of-spec, an alert must be sent to a 3rd party system (MS Teams).</p>
+</li>
+<li>
+<p>Operators must be able to identify and record the reason for the torque variance by selecting a Variance Code that will be recorded on the Production Order in S/4 upon order confirmation.</p>
+</li>
+<li>
+<p>The personnel ID of the operator performing the torque inspection must be recorded on the Production Order in S/4 upon order confirmation.</p>
+</li>
+<li>
+<p>Personnel IDs must be referenced and maintained external to DMC.</p>
+</li>
+<li>
+<p>DMC resources must be conditionally disabled based on machine status tags on the machine controller.</p>
+</li>
+</ol>
+<h2 id="scenarios">Scenarios<a class="headerlink" href="#scenarios" title="Permanent link">&para;</a></h2>
+<p>Our business scenario follows a standard DMC production flow that has been enhanced at several points in the process with DMC extensions to address the above gaps.  The End-to-End scenario assumes a S/4HANA integrated landscape (Scenario 1), however standalone DMC environments can also be used to build and deploy the extensions in this bootcamp that do not rely on S/4 integration (Scenario 2) with some added manual steps.  Other than S/4 integration dependancies, Scenario 1 and 2 are identical.</p>
+<p>A machine monitoring scenario separate from the production process is also covered (Scenario 3).</p>
+<p>Scenario 1: DMC Production with S/4HANA integration
+Scenario 2: Standalone DMC Production
+Scenario 3: Machine Monitoring</p>
+<p>To use an integrated S/4 environment, participants must either create associated master data in S/4HANA that matches the data provided for the bootcamp, or use their own master and transactional data.  The extensions covered in the business scenario can be applied to any similar, basic data set.</p>
+<p><strong>End-to-End Scenario</strong></p>
+<p>The End-to-End scenario assumes that DMC is integrated with S/4HANA (Scenario 1).  We will be executing a simple production order for a lifter assembly with only 2 operations - Assembly and Inspection.</p>
+<p><img alt="" src="assets/indexScenarioE2E.png" /></p>
+<ol>
+<li>
+<p>The process begins with the release of a Production Order in S/4 and standard IDoc integration to DMC through CPI.  The inbound Production Order message is enhanced during integration to include Sales Order information.</p>
+</li>
+<li>
+<p>The Production Order is automatically released in DMC and SFCs are generated by custom Next Number logic that include the Sales Order prefix scheme.</p>
+</li>
+<li>
+<p>The operator starts an SFC at the first routing operation - Assembly.</p>
+</li>
+<li>
+<p>During assembly, torque data and assembly image data are captured.</p>
+</li>
+<li>
+<p>The assembly is visually inspected using the captured image data and a pre-trained ML model to calculate the probability of incorrect assembly.</p>
+</li>
+<li>
+<p>A Nonconformance may be logged by the operator based on the output of the model analysis.</p>
+</li>
+<li>
+<p>The SFC is completed at the Assembly operation and started at the Inspection operation.</p>
+</li>
+<li>
+<p>The operator initiates a torque evaluation to check for a recent trend of out-of-spec torque values.  If a series of 3 consecutive violations is discovered, the SFC is deemed nonconformant and the custom production process automatically creates an NC and sends an alert to an external system, MS Teams.</p>
+</li>
+<li>
+<p>The operator closes all open NCs and completes the final operation by selecting a Variance Code and inputing Personnel ID.</p>
+</li>
+<li>
+<p>The SFC is completed and a production confirmation message is generated for the order.  The supplied Variance Code and Personnel ID are added to the confirmation message.</p>
+</li>
+<li>
+<p>The production confirmation is received to the production order in S/4HANA and the additional data is recorded.</p>
+</li>
+</ol>
+<p>Scenario 3 is a Machine Monitoring process that simulates machine status and updates corresponding DMC work center resources to reflect down and up events. The basic process is as follows:</p>
+<ol>
+<li>
+<p>Monitored machine controller status tag satisfies condition for an event change.</p>
+</li>
+<li>
+<p>Corresponding DMC resource is disabled or enabled based on message type.</p>
+</li>
+<li>
+<p>Monitoring dashboard andon light is updated to reflect new machine status.</p>
+</li>
+</ol>
+<p><strong>Scenario 1 - Integrated with SAP S/4HANA</strong></p>
+<p>Scenario 1 follows a DMC solution that is integrated with S/4HANA for master data (materials, BOMs, routings, work centers, etc.) and transactional data (sales &amp; production orders).  In Scenario 1, production orders will be created in S/4 and sent to DMC through standard integration IDocs.  The production order message will be enhanced through integration extensions to add the sales order data as required.  Plant Connectivity is shown for some processes in the block diagrams but is simulated at the ingestion point in DMC.  PCo is not required to follow this scenario and is not covered in the exercises, however participants with fully integrated PCo environments can leverage the functionality if they choose to do so.</p>
+<p><img alt="" src="assets/indexScenario1Step1.png" />
+Create and Release Production Order</p>
+<ol>
+<li>
+<p>Create Production Order - With custom fields such as sales order</p>
+</li>
+<li>
+<p>Process Production Order (Integration) - Integration Extension - with custom fields</p>
+</li>
+<li>
+<p>Receive Order - Custom Fields Extension</p>
+</li>
+<li>
+<p>Release Shop Order - Generate SFC - In-App Extension; Custom Next Number Logic</p>
+</li>
+</ol>
+<p><img alt="" src="assets/indexScenario1Step3-1.png" /></p>
+<p>Perform Assembly Operation</p>
+<ol>
+<li>
+<p>Start SFC - With a Production Process</p>
+</li>
+<li>
+<p>Autoassemble from Production Process</p>
+</li>
+<li>
+<p>Perform Automated Data Collection</p>
+</li>
+<li>
+<p>Evaluate the Parameter Limits (torque)</p>
+</li>
+</ol>
+<p>Evaluate Torque -&gt; Read 2 Torque values (Left Torque, Right Torque) -&gt; Data Collection -&gt; Pass an Array of objects (value, lower range and upper range ) to Extension.</p>
+<ol>
+<li>If outside of Parameter Limits, automatically create a Nonconformance</li>
+</ol>
+<p><img alt="" src="assets/indexScenario1Step2.png" /></p>
+<p>Perform Assembly Operation - Visual Inspection</p>
+<ol>
+<li>
+<p>Manual Data Collection of Image</p>
+</li>
+<li>
+<p>Visual Inspector Plugin, Do Image Analysis</p>
+</li>
+<li>
+<p>Complete SFC</p>
+</li>
+</ol>
+<p><img alt="" src="assets/indexScenario1Step3-2.png" /></p>
+<p>Attempt 1 - Complete SFC - With a Production Process</p>
+<ol>
+<li>
+<p>Check for Open NCs</p>
+</li>
+<li>
+<p>If Open NC's, send error message</p>
+</li>
+<li>
+<p>Close Open NC - Manually</p>
+</li>
+</ol>
+<p>Attempt 2 - Complete SFC - With a Production Process</p>
+<ol>
+<li>
+<p>Check for open NCs</p>
+</li>
+<li>
+<p>If No Open NC's, Operator Prompted with Variance Code Screen (POD Plugin) via Guided Execution, include acquisition of Personnel Number -&gt; BTP Storage of lookup table USER ID &amp; Personnel Number - Side by Side Extension)</p>
+</li>
+<li>
+<p>Open NC Check will pass </p>
+</li>
+<li>
+<p>Variance Reason Code (Fixed list in the custom POD Plugin UI) and Personnel Number should be passed to CPI and S/4 Layer as part of the order confirmation  (New iFlow - handles input and output)</p>
+</li>
+</ol>
+<p><strong>Scenario 2 - No integration with SAP S/4HANA</strong></p>
+<p>Scenario 2 follows a DMC solution that is not integrated with S/4HANA and requires that all data otherwise originating in S/4 in Scenario 1 instead be entered or generated manually in DMC.  Integration extensions are not included in this scenario.</p>
+<p><img alt="" src="assets/indexScenario2Step1.png" /></p>
+<p>Create and Release Production Order</p>
+<ol>
+<li>
+<p>Create Production Order - With custom fields such as sales order</p>
+</li>
+<li>
+<p>Process Production Order (Integration) - Integration Extension - with custom fields</p>
+</li>
+<li>
+<p>Receive Order - Custom Fields Extension</p>
+</li>
+<li>
+<p>Release Shop Order - Generate SFC - In-App Extension; Custom Next Number Logic</p>
+</li>
+</ol>
+<p><img alt="" src="assets/indexScenario1Step3-1.png" /></p>
+<p>Perform Assembly Operation</p>
+<ol>
+<li>
+<p>Start SFC - With a Production Process</p>
+</li>
+<li>
+<p>Autoassemble from Production Process</p>
+</li>
+<li>
+<p>Perform Automated Data Collection</p>
+</li>
+<li>
+<p>Evaluate the Parameter Limits (torque))</p>
+</li>
+</ol>
+<p>Complete Assembly Operation -&gt; Read 2 Torque values (Left Torque, Right Torque) -&gt; Data Collection -&gt; Pass an Array of objects (value, lower range and upper range ) to Extension.</p>
+<ol>
+<li>If outside of Parameter Limits, automatically create a Nonconformance</li>
+</ol>
+<p><img alt="" src="assets/indexScenario1Step2.png" /></p>
+<p>Perform Assembly Operation - Visual Inspection</p>
+<ol>
+<li>
+<p>Manual Data Collection of Image</p>
+</li>
+<li>
+<p>Visual Inspector Plugin, Do Image Analysis</p>
+</li>
+<li>
+<p>Complete SFC</p>
+</li>
+</ol>
+<p><img alt="" src="assets/indexScenario2Step3-2.png" /></p>
+<p>Perform Inspection Operation</p>
+<p>Attempt 1 - Complete SFC - With a Production Process</p>
+<ol>
+<li>
+<p>Check for Open NCs</p>
+</li>
+<li>
+<p>If Open NC's, send error message</p>
+</li>
+<li>
+<p>Close Open NC - Manually</p>
+</li>
+</ol>
+<p>Attempt 2 - Complete SFC - With a Production Process</p>
+<ol>
+<li>
+<p>Check for open NCs</p>
+</li>
+<li>
+<p>If No Open NC's, Operator Prompted with Variance Code Screen (POD Plugin) via Guided Execution, include acquisition of Personnel Number -&gt; BTP Storage of lookup table USER ID &amp; Personnel Number - Side by Side Extension)</p>
+</li>
+<li>
+<p>Open NC Check will pass </p>
+</li>
+<li>
+<p>Variance Reason Code (Fixed list in the custom POD Plugin UI) and Personnel Number should be passed to CPI and S/4 Layer as part of the order confirmation  (New iFlow - handles input and output)</p>
+</li>
+</ol>
+<p><strong>Scenario 3 - Machine Monitoring</strong></p>
+<p>Scenario 3 is a Machine Monitoring scenario that simulates machine status change events and updates DMC resources conditionally.  Plant Connectivity is shown for some processes in the block diagrams but is simulated at the ingestion point in DMC.  PCo is not required to follow this scenario and is not covered in the exercises, however participants with fully integrated PCo environments can leverage the functionality if they choose to do so. </p>
+<p><img alt="" src="assets/indexScenario3.png" /></p>
+<p>Machine Monitoring</p>
+<ol>
+<li>Create a subscription on a tag value in PCO (Configuration) -&gt; machine status 0, 1, 2, 3, 4, 5, 6 -&gt; Change resource status.​</li>
+<li>Step 2 - Create an Alert for production supervisor. (Configuration) -&gt; Manager Alert -&gt;  EHS Request​</li>
+<li>Send Status Change to Andon Lights - (Outbound Web Service call to Side by Side Extension)</li>
+</ol>
+<h2 id="data-load">Data Load<a class="headerlink" href="#data-load" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Plant: EBC200</li>
+<li>Work Center: WC-LIFT</li>
+<li>Operations: LA-ASSEMBLY, LA-INSPECTION</li>
+<li>Resources: DEFAULT</li>
+<li>Material: LIFTER-ASSY</li>
+<li>Component: LIFTER-FRAME</li>
+<li>NC Groups: PRIMARY, MISSING_SCREW</li>
+<li>NC Codes: ASSEMBLY_TORQUE, SCREW_LEFT, SCREW_RIGHT</li>
+</ul>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="DMCUseCases.html" title="DMC Use Cases" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                DMC Use Cases
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="Field%26IntegrationExtensions.html" title="Content" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Content
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.8f58b9eb.js"></script>
+      
+      <script>app.initialize({version:"1.2.1",url:{base:"."}})</script>
+      
+        <script src="search/main.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,763 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Exercise 1.1 - DMC Extensibility Bootcamp</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="assets/javascripts/modernizr.eca31fed.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="theme/stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#exercise-11-create-production-order-with-custom-fields" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="." title="DMC Extensibility Bootcamp" aria-label="DMC Extensibility Bootcamp" class="md-header-nav__button md-logo">
+          
+            <img alt="logo" src="assets/logo_sap.jpeg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              DMC Extensibility Bootcamp
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Exercise 1.1
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/SAP-samples/digital-manufacturing-extension-samples/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="index.html" class="md-tabs__link">
+          Unit 1
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="Field%26IntegrationExtensions.html" class="md-tabs__link">
+          Unit 2
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="InAppExtensions.html" class="md-tabs__link">
+          Unit 3
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="Exercise1.1.html" class="md-tabs__link md-tabs__link--active">
+          Exercise 1
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="." title="DMC Extensibility Bootcamp" class="md-nav__button md-logo">
+      
+        <img alt="logo" src="assets/logo_sap.jpeg" width="48" height="48">
+      
+    </a>
+    DMC Extensibility Bootcamp
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/SAP-samples/digital-manufacturing-extension-samples/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      Unit 1
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Unit 1
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="index.html" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="BTPExtensionSuite.html" title="BTP Extension Suite" class="md-nav__link">
+      BTP Extension Suite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="DMCUseCases.html" title="DMC Use Cases" class="md-nav__link">
+      DMC Use Cases
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="BootcampUseCase.html" title="Bootcamp Scenario" class="md-nav__link">
+      Bootcamp Scenario
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Unit 2
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Unit 2
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Field%26IntegrationExtensions.html" title="Content" class="md-nav__link">
+      Content
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Unit 3
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Unit 3
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="InAppExtensions.html" title="Content" class="md-nav__link">
+      Content
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Exercise 1
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Exercise 1
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Exercise 1.1
+      </label>
+    
+    <a href="Exercise1.1.html" title="Exercise 1.1" class="md-nav__link md-nav__link--active">
+      Exercise 1.1
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-create-custom-data-in-app-manage-custom-data" class="md-nav__link">
+    Step 1 - Create Custom Data in app Manage Custom Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-define-rules-for-populate-values-for-the-fields" class="md-nav__link">
+    Step 2 - Define Rules for populate values for the fields
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-create-production-orders-from-sap-s4-hana" class="md-nav__link">
+    Step 3 - Create Production Orders from SAP S/4 HANA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-create-production-orders-from-dmc" class="md-nav__link">
+    Step 4 - Create Production Orders from DMC
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-verify-release-production-order" class="md-nav__link">
+    Step 5 - Verify Release Production Order
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Exercise1.2.html" title="Exercise 1.2" class="md-nav__link">
+      Exercise 1.2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-create-custom-data-in-app-manage-custom-data" class="md-nav__link">
+    Step 1 - Create Custom Data in app Manage Custom Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-define-rules-for-populate-values-for-the-fields" class="md-nav__link">
+    Step 2 - Define Rules for populate values for the fields
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-create-production-orders-from-sap-s4-hana" class="md-nav__link">
+    Step 3 - Create Production Orders from SAP S/4 HANA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-create-production-orders-from-dmc" class="md-nav__link">
+    Step 4 - Create Production Orders from DMC
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-verify-release-production-order" class="md-nav__link">
+    Step 5 - Verify Release Production Order
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/SAP-samples/digital-manufacturing-extension-samples/edit/master/docs/Exercise1.1.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="exercise-11-create-production-order-with-custom-fields">Exercise 1.1 - Create Production Order with custom fields<a class="headerlink" href="#exercise-11-create-production-order-with-custom-fields" title="Permanent link">&para;</a></h1>
+<h2 id="step-1-create-custom-data-in-app-manage-custom-data">Step 1 - Create Custom Data in app Manage Custom Data<a class="headerlink" href="#step-1-create-custom-data-in-app-manage-custom-data" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Open app Manage Custom Data with your plant</li>
+<li>
+<p>Select Shop Order, and define your own data fields, then save</p>
+<table>
+<thead>
+<tr>
+<th>Data Field</th>
+<th>Field Label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CD_SALES_ORDER_ID</td>
+<td>Sales Order</td>
+</tr>
+<tr>
+<td>CD_CUSTOMER_NAME</td>
+<td>Customer Name</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="assets/MCD_ShopOrder.png" /></p>
+</li>
+</ol>
+<h2 id="step-2-define-rules-for-populate-values-for-the-fields">Step 2 - Define Rules for populate values for the fields<a class="headerlink" href="#step-2-define-rules-for-populate-values-for-the-fields" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Open app Manage Integration Workflows and select LOIPRO05_PRODORDER</li>
+<li>Copy the value from section 'Standard XSLT'</li>
+<li>Modify the value populating rule by goto the end of block of 'shopOrderIn', uncomments the section dev team reserved and build your own one, save it to Custom XSLT section. <a href="https://github.tools.sap/DigitalManufacturingExtensions/DMCExtensibilityBootcamp/blob/master/DMC_IntegrationExtensions/LOIPRO05_Reqeust_customized_with_sales_order_and_customer.xsl">Sample XSLT</a></li>
+</ol>
+<p><img alt="" src="assets/MIW_LOIPRO05_MAPPING.png" /></p>
+<h2 id="step-3-create-production-orders-from-sap-s4-hana">Step 3 - Create Production Orders from SAP S/4 HANA<a class="headerlink" href="#step-3-create-production-orders-from-sap-s4-hana" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Login to SAP S/4 HANA system</li>
+<li>Goto transaction co08</li>
+<li>Enter the correct sales order, ordre type then hit 'enter' and an sales order based Production order genarted
+<img alt="" src="assets/S4_ProdOrder_Create.png" /></li>
+<li>Confirm the Quantity and End date and hit 'Enter'
+<img alt="" src="assets/S4_ConfirmOrder.png" /></li>
+<li>Release the order first and then Save, you will be given an order number in the message
+<img alt="" src="assets/S4_ORDERNUMBER.png" /></li>
+<li>Send the Production Order with program RCCLORD from transaction se38, Order, material, Production Plant, Order Type, Logical System and Message Type should be filled with.
+<img alt="" src="assets/S4_RCCLORD_1.png" />
+<img alt="" src="assets/S4_RCCLORD_2.png" /></li>
+<li>If the Plant id are dirrent between DMC and S/4 HANA, you need do the plant conversion, refer <a href="https://help.sap.com/viewer/c86ca4026fae4cb3ba66ed751866175b/latest/en-US/28923c635ae1463898b039b78d5137f7.html?q=Plant%20Conversion">Plant Conversion</a></li>
+</ol>
+<h2 id="step-4-create-production-orders-from-dmc">Step 4 - Create Production Orders from DMC<a class="headerlink" href="#step-4-create-production-orders-from-dmc" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Open app Manage Orders and click 'Create'</li>
+<li>Fill in values for mandatory fields and save</li>
+</ol>
+<h2 id="step-5-verify-release-production-order">Step 5 - Verify Release Production Order<a class="headerlink" href="#step-5-verify-release-production-order" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Open app Manage Orders</li>
+<li>Select the order you created from DMC or SAP S/4 HANA</li>
+<li>Review the order, you should be able verify the Sales Order ID and Customer Name from tab 'Custom Data'
+<img alt="" src="assets/MO_VERIFYORDER.png" /></li>
+<li>Click button 'Release'</li>
+<li>Enter quantity you want to release and click button 'Release' to release the order
+<img alt="" src="assets/MO_ReleaseOrder.png" /></li>
+<li>Verify that number of SFCs added corresponding to your new quantity released
+<img alt="" src="assets/DMC_AFTTER_REL.png" /></li>
+</ol>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="InAppExtensions.html" title="Content" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Content
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="Exercise1.2.html" title="Exercise 1.2" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Exercise 1.2
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.8f58b9eb.js"></script>
+      
+      <script>app.initialize({version:"1.2.1",url:{base:"."}})</script>
+      
+        <script src="search/main.js"></script>
+      
+    
+  </body>
+</html>
