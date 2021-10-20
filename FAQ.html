@@ -1,0 +1,967 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Content - DMC Extensibility Bootcamp</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="assets/javascripts/modernizr.eca31fed.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="theme/stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#frequently-asked-questions" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="." title="DMC Extensibility Bootcamp" aria-label="DMC Extensibility Bootcamp" class="md-header-nav__button md-logo">
+          
+            <img alt="logo" src="assets/logo_sap.jpeg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              DMC Extensibility Bootcamp
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Content
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/SAP-samples/digital-manufacturing-extension-samples/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="index.html" class="md-tabs__link">
+          Unit 1
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="Field%26IntegrationExtensions.html" class="md-tabs__link">
+          Unit 2
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="InAppExtensions.html" class="md-tabs__link">
+          Unit 3
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="Exercise1.1.html" class="md-tabs__link">
+          Exercise 1
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="FAQ.html" class="md-tabs__link md-tabs__link--active">
+          FAQ
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="ParticipantGuide.html" class="md-tabs__link">
+          Participant Guide
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="." title="DMC Extensibility Bootcamp" class="md-nav__button md-logo">
+      
+        <img alt="logo" src="assets/logo_sap.jpeg" width="48" height="48">
+      
+    </a>
+    DMC Extensibility Bootcamp
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/SAP-samples/digital-manufacturing-extension-samples/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      Unit 1
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Unit 1
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="index.html" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="BTPExtensionSuite.html" title="BTP Extension Suite" class="md-nav__link">
+      BTP Extension Suite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="DMCUseCases.html" title="DMC Use Cases" class="md-nav__link">
+      DMC Use Cases
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="BootcampUseCase.html" title="Bootcamp Scenario" class="md-nav__link">
+      Bootcamp Scenario
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Unit 2
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Unit 2
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Field%26IntegrationExtensions.html" title="Content" class="md-nav__link">
+      Content
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Unit 3
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Unit 3
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="InAppExtensions.html" title="Content" class="md-nav__link">
+      Content
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Exercise 1
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Exercise 1
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Exercise1.1.html" title="Exercise 1.1" class="md-nav__link">
+      Exercise 1.1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Exercise1.2.html" title="Exercise 1.2" class="md-nav__link">
+      Exercise 1.2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      FAQ
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        FAQ
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Content
+      </label>
+    
+    <a href="FAQ.html" title="Content" class="md-nav__link md-nav__link--active">
+      Content
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#can-we-do-extensions-in-dmc-with-demo-and-test-licence-we-have-as-partner" class="md-nav__link">
+    Can we do extensions in DMC with demo and test licence we have as partner
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#can-you-show-us-what-kind-of-tables-are-exposed-from-dmc-via-odata-services" class="md-nav__link">
+    Can you show us what kind of tables are exposed from DMC via OData services?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-kind-of-in-app-extensions-are-possible-withing-dmc" class="md-nav__link">
+    What kind of In-App extensions are possible withing DMC?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is-it-theoretically-possible-to-customize-a-pod-button-to-open-a-link-with-a-dynamic-parameter-that-is-filled-with-the-currently-selected-shop-order" class="md-nav__link">
+    Is it theoretically possible to customize a POD button to open a link with a dynamic parameter that is filled with the currently selected shop order?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-we-migrate-the-activity-hooks-and-how-can-we-interact-with-external-databases-or-systems-mii-external-services-as-we-do-with-the-hooks" class="md-nav__link">
+    How can we migrate the activity hooks and how can we interact with external databases or systems (MII, external services) as we do with the hooks?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-alternate-solution-for-mii-and-can-we-keep-using-the-same" class="md-nav__link">
+    What is the alternate solution for MII and can we keep using the same.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-can-we-put-our-own-implemented-web-services" class="md-nav__link">
+    Where can we put our own implemented web services?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-can-we-create-our-own-schema-and-how-can-access-it-from-dmc" class="md-nav__link">
+    Where can we create our own schema and how can access it from DMC?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-we-can-refresh-pod-from-machine-connectivity-trigger" class="md-nav__link">
+    How we can refresh POD from Machine Connectivity trigger?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#can-we-show-notifications-on-pod-as-per-the-changes-in-tag-vaue-changes" class="md-nav__link">
+    Can we show notifications on POD as per the changes in tag vaue changes?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is-it-correct-to-say-sap-me-java-sdk-knowledge-is-obsolete-in-sap-dmc-or-is-there-any-java-involved" class="md-nav__link">
+    Is it correct to say SAP ME Java SDK knowledge is obsolete in SAP DMC or is there any Java involved?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-the-machine-learning-piece-data-is-critical-do-we-have-the-ability-to-do-sdi-or-some-kind-of-slt-tool-for-extracting-high-volume-of-information" class="md-nav__link">
+    For the Machine Learning piece, data is critical. Do we have the ability to do SDI or some kind of SLT tool, for extracting high volume of information?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-we-createextend-our-own-pods" class="md-nav__link">
+    How can we create/extend our own PODs?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is-there-a-guideline-how-to-migrate-existing-sap-me-html-plug-ins-to-dmc" class="md-nav__link">
+    Is there a guideline how to migrate existing SAP ME HTML plug-ins to DMC?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-is-the-transport-between-different-systems-development-test-productive-managed" class="md-nav__link">
+    How is the transport between different systems (development, test, productive) managed?
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Participant Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Participant Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="ParticipantGuide.html" title="Content" class="md-nav__link">
+      Content
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#can-we-do-extensions-in-dmc-with-demo-and-test-licence-we-have-as-partner" class="md-nav__link">
+    Can we do extensions in DMC with demo and test licence we have as partner
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#can-you-show-us-what-kind-of-tables-are-exposed-from-dmc-via-odata-services" class="md-nav__link">
+    Can you show us what kind of tables are exposed from DMC via OData services?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-kind-of-in-app-extensions-are-possible-withing-dmc" class="md-nav__link">
+    What kind of In-App extensions are possible withing DMC?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is-it-theoretically-possible-to-customize-a-pod-button-to-open-a-link-with-a-dynamic-parameter-that-is-filled-with-the-currently-selected-shop-order" class="md-nav__link">
+    Is it theoretically possible to customize a POD button to open a link with a dynamic parameter that is filled with the currently selected shop order?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-we-migrate-the-activity-hooks-and-how-can-we-interact-with-external-databases-or-systems-mii-external-services-as-we-do-with-the-hooks" class="md-nav__link">
+    How can we migrate the activity hooks and how can we interact with external databases or systems (MII, external services) as we do with the hooks?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-alternate-solution-for-mii-and-can-we-keep-using-the-same" class="md-nav__link">
+    What is the alternate solution for MII and can we keep using the same.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-can-we-put-our-own-implemented-web-services" class="md-nav__link">
+    Where can we put our own implemented web services?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-can-we-create-our-own-schema-and-how-can-access-it-from-dmc" class="md-nav__link">
+    Where can we create our own schema and how can access it from DMC?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-we-can-refresh-pod-from-machine-connectivity-trigger" class="md-nav__link">
+    How we can refresh POD from Machine Connectivity trigger?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#can-we-show-notifications-on-pod-as-per-the-changes-in-tag-vaue-changes" class="md-nav__link">
+    Can we show notifications on POD as per the changes in tag vaue changes?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is-it-correct-to-say-sap-me-java-sdk-knowledge-is-obsolete-in-sap-dmc-or-is-there-any-java-involved" class="md-nav__link">
+    Is it correct to say SAP ME Java SDK knowledge is obsolete in SAP DMC or is there any Java involved?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-the-machine-learning-piece-data-is-critical-do-we-have-the-ability-to-do-sdi-or-some-kind-of-slt-tool-for-extracting-high-volume-of-information" class="md-nav__link">
+    For the Machine Learning piece, data is critical. Do we have the ability to do SDI or some kind of SLT tool, for extracting high volume of information?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-we-createextend-our-own-pods" class="md-nav__link">
+    How can we create/extend our own PODs?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#is-there-a-guideline-how-to-migrate-existing-sap-me-html-plug-ins-to-dmc" class="md-nav__link">
+    Is there a guideline how to migrate existing SAP ME HTML plug-ins to DMC?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-is-the-transport-between-different-systems-development-test-productive-managed" class="md-nav__link">
+    How is the transport between different systems (development, test, productive) managed?
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/SAP-samples/digital-manufacturing-extension-samples/edit/master/docs/FAQ.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="frequently-asked-questions">Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permanent link">&para;</a></h1>
+<h3 id="can-we-do-extensions-in-dmc-with-demo-and-test-licence-we-have-as-partner">Can we do extensions in DMC with demo and test licence we have as partner<a class="headerlink" href="#can-we-do-extensions-in-dmc-with-demo-and-test-licence-we-have-as-partner" title="Permanent link">&para;</a></h3>
+<p>Yes you can and you can start testing the concepts of DMC Extensibility building artifacts in BTP trial account.</p>
+<h3 id="can-you-show-us-what-kind-of-tables-are-exposed-from-dmc-via-odata-services">Can you show us what kind of tables are exposed from DMC via OData services?<a class="headerlink" href="#can-you-show-us-what-kind-of-tables-are-exposed-from-dmc-via-odata-services" title="Permanent link">&para;</a></h3>
+<p>DMC does not expose the tables rather data is exposed via public REST APIs. Here is a list DMC APIs exposed and documented in <a href="https://api.sap.com/package/SAPDigitalManufacturingCloud/rest">SAP API Hub</a></p>
+<h3 id="what-kind-of-in-app-extensions-are-possible-withing-dmc">What kind of In-App extensions are possible withing DMC?<a class="headerlink" href="#what-kind-of-in-app-extensions-are-possible-withing-dmc" title="Permanent link">&para;</a></h3>
+<p>There are whole range of possibilities with In-App Extensions such as extend existing APIs, trigger parallel processes, augment API outputs, custom Fields support and enriching integration content listening to stanard events. The activity hook can be a pre or post event. </p>
+<h3 id="is-it-theoretically-possible-to-customize-a-pod-button-to-open-a-link-with-a-dynamic-parameter-that-is-filled-with-the-currently-selected-shop-order">Is it theoretically possible to customize a POD button to open a link with a dynamic parameter that is filled with the currently selected shop order?<a class="headerlink" href="#is-it-theoretically-possible-to-customize-a-pod-button-to-open-a-link-with-a-dynamic-parameter-that-is-filled-with-the-currently-selected-shop-order" title="Permanent link">&para;</a></h3>
+<p>Yes, it is possible with a custom POD Plugin. </p>
+<h3 id="how-can-we-migrate-the-activity-hooks-and-how-can-we-interact-with-external-databases-or-systems-mii-external-services-as-we-do-with-the-hooks">How can we migrate the activity hooks and how can we interact with external databases or systems (MII, external services) as we do with the hooks?<a class="headerlink" href="#how-can-we-migrate-the-activity-hooks-and-how-can-we-interact-with-external-databases-or-systems-mii-external-services-as-we-do-with-the-hooks" title="Permanent link">&para;</a></h3>
+<p>This would be similar to how to tackle some of the In-App extension scenarios and interaction with external databases can happen in production process deisgner using APIs. Also, there is further work in progress in this area to make it more usable. </p>
+<h3 id="what-is-the-alternate-solution-for-mii-and-can-we-keep-using-the-same">What is the alternate solution for MII and can we keep using the same.<a class="headerlink" href="#what-is-the-alternate-solution-for-mii-and-can-we-keep-using-the-same" title="Permanent link">&para;</a></h3>
+<p>We dont have direct replacement for MII. And absolutely, we can reuse the services from MII along with the new capabilities in Production Process Designer to orchestrate some of the business logic needed for custom processes and extensions.</p>
+<h3 id="where-can-we-put-our-own-implemented-web-services">Where can we put our own implemented web services?<a class="headerlink" href="#where-can-we-put-our-own-implemented-web-services" title="Permanent link">&para;</a></h3>
+<p>Custom API/webservices can be deployed in PaaS account or in Kyma environment and can be linked to production process deisgner. We have some demos around this in the bootcamp event. </p>
+<p>Also, the service enhancements done at the shop floor such as Printing enhancements, Shop-order creation, SFC lifecycle checking, Customized ME-ERP backflushing, Scrap extension etc. can be addressed using the extensive array of extensibility mechanisms in DMC. Some of the conversation would be realized in the bootcamp excercises. </p>
+<h3 id="where-can-we-create-our-own-schema-and-how-can-access-it-from-dmc">Where can we create our own schema and how can access it from DMC?<a class="headerlink" href="#where-can-we-create-our-own-schema-and-how-can-access-it-from-dmc" title="Permanent link">&para;</a></h3>
+<p>Customers/partners can have their own schema to store the custom objects/data in PaaS account or Kyma environment. We have some demo also on the bootcamp event.  </p>
+<h3 id="how-we-can-refresh-pod-from-machine-connectivity-trigger">How we can refresh POD from Machine Connectivity trigger?<a class="headerlink" href="#how-we-can-refresh-pod-from-machine-connectivity-trigger" title="Permanent link">&para;</a></h3>
+<p>We can subscribe to machine tags and refresh POD by sending notifications events.</p>
+<h3 id="can-we-show-notifications-on-pod-as-per-the-changes-in-tag-vaue-changes">Can we show notifications on POD as per the changes in tag vaue changes?<a class="headerlink" href="#can-we-show-notifications-on-pod-as-per-the-changes-in-tag-vaue-changes" title="Permanent link">&para;</a></h3>
+<p>Yes, this can be done using the POD Messages or customers and partners can write POD plugins which can listen for the notification event. </p>
+<h3 id="is-it-correct-to-say-sap-me-java-sdk-knowledge-is-obsolete-in-sap-dmc-or-is-there-any-java-involved">Is it correct to say SAP ME Java SDK knowledge is obsolete in SAP DMC or is there any Java involved?<a class="headerlink" href="#is-it-correct-to-say-sap-me-java-sdk-knowledge-is-obsolete-in-sap-dmc-or-is-there-any-java-involved" title="Permanent link">&para;</a></h3>
+<p>The extensions built in DMC can be microservices bringing the whole notion of persistence, service and UI. And building microservice in the cloud is language agnostic, so definitely the knowledge and design patterns can be repurposed here. </p>
+<h3 id="for-the-machine-learning-piece-data-is-critical-do-we-have-the-ability-to-do-sdi-or-some-kind-of-slt-tool-for-extracting-high-volume-of-information">For the Machine Learning piece, data is critical. Do we have the ability to do SDI or some kind of SLT tool, for extracting high volume of information?<a class="headerlink" href="#for-the-machine-learning-piece-data-is-critical-do-we-have-the-ability-to-do-sdi-or-some-kind-of-slt-tool-for-extracting-high-volume-of-information" title="Permanent link">&para;</a></h3>
+<p>This work is in requirment phase followed by the design phase.</p>
+<h3 id="how-can-we-createextend-our-own-pods">How can we create/extend our own PODs?<a class="headerlink" href="#how-can-we-createextend-our-own-pods" title="Permanent link">&para;</a></h3>
+<p>We can create custom PODs using standard plugins through configuration or through building new custom POD plugins. The custom plugins can be built in PaaS environment or in Kyma.</p>
+<h3 id="is-there-a-guideline-how-to-migrate-existing-sap-me-html-plug-ins-to-dmc">Is there a guideline how to migrate existing SAP ME HTML plug-ins to DMC?<a class="headerlink" href="#is-there-a-guideline-how-to-migrate-existing-sap-me-html-plug-ins-to-dmc" title="Permanent link">&para;</a></h3>
+<p>Currently there are no guidelines to migrate ME POD plugins to DMC, but we are currently evaluating the feasibility.</p>
+<h3 id="how-is-the-transport-between-different-systems-development-test-productive-managed">How is the transport between different systems (development, test, productive) managed?<a class="headerlink" href="#how-is-the-transport-between-different-systems-development-test-productive-managed" title="Permanent link">&para;</a></h3>
+<p>You can find the description here: <a href="https://discovery-center.cloud.sap/serviceCatalog/cloud-transport-management?region=all">Cloud Transport Management</a></p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="Exercise1.2.html" title="Exercise 1.2" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Exercise 1.2
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="ParticipantGuide.html" title="Content" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Content
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.8f58b9eb.js"></script>
+      
+      <script>app.initialize({version:"1.2.1",url:{base:"."}})</script>
+      
+        <script src="search/main.js"></script>
+      
+    
+  </body>
+</html>
